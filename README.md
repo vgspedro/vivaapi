@@ -595,6 +595,15 @@ payment_submit:
 
 
 
+
+## PreAuth from https://developer.vivawallet.com/api-reference-guide/payment-api/#tag/Payments/paths/~1api~1orders/post
+PreAuth	boolean
+Default: false
+If true, a PreAuth transaction will be performed. This will hold the selected amount as unavailable (without the customer being charged) for a period of time.
+
+PreAuth transactions with a debit card or credit card hold the balance as unavailable either until the merchant clears the transaction or the hold "falls off". In the case of debit cards, authorization holds can fall off the account (thus rendering the balance available again) anywhere from 1–5 days after the transaction date depending on the bank's policy; in the case of credit cards, holds may last as long as 30 days, depending on the issuing bank.
+
+
 ## Prerequisites
 
 Complete prerequisite steps from https://developer.vivawallet.com/online-checkouts/native-checkout-v2/ and obtain your `Client ID` and `Client Secret`.
