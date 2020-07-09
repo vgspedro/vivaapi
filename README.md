@@ -7,10 +7,10 @@ This is a wrapper for Native Checkout V2 API of Viva Wallet: https://developer.v
 
 ## How to use
 
-This library is installed via [Composer](http://getcomposer.org/). You will need to require `atdev/viva-php`:
+This library is installed via [Composer](http://getcomposer.org/). You will need to require `vgspedro/vivaapi`:
 
 ```
-composer require atdev/viva-php:1.0.0
+composer require vgspedro/vivaapi
 ```
 
 ## Prerequisites
