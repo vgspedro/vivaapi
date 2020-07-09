@@ -3,6 +3,10 @@
 
 # Viva Wallet Native Checkout V2 API PHP Wrapper Library by Aleksey Kuleshov
 
+This package is based on Aleksey Kuleshov work.
+
+Has been modded to suit my needs.
+
 This is a wrapper for Native Checkout V2 API of Viva Wallet: https://developer.vivawallet.com/online-checkouts/native-checkout-v2/
 
 ## How to use
