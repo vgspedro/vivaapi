@@ -172,7 +172,6 @@ class PaymentController extends AbstractController
 
 # src/Service/VivaWallet.php
 
-
 namespace App\Service;
 
 use \VgsPedro\VivaApi\Transaction\Authorization;
@@ -185,7 +184,6 @@ use \VgsPedro\VivaApi\Transaction\ChargeToken;
 use \VgsPedro\VivaApi\Transaction\Installments;
 
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
-use Symfony\Component\HttpFoundation\Request;
 
 class VivaWallet
 {
@@ -500,6 +498,12 @@ class VivaWallet
         <button class="btn btn-success" type="button" id="submit">Submit Payment </button>
     </form>
     <hr>
+	<h3>Options</h3>
+	Charge Only = Create a transaction to be Captured<br>
+	Authorized = Create a transaction and Captured the amount<br>
+	Charge & Capture = Create a transaction then Capture the amount<br>
+	Charge & Cancel = Create a transaction then Cancel the transaction<br>
+
 
     <div id="threed-pane" style="height: 450px;width:500px"></div>
 
@@ -573,12 +577,23 @@ class VivaWallet
         });
       });
     </script>
-
-
-
-
-</pre>
 ```
+
+#### Add the Routes 
+
+# config/routes.yaml
+
+payment:
+    path: /admin/payment
+    controller: App\Controller\PaymentController::index
+    
+payment_submit:
+    path: /admin/payment-submit
+    controller: App\Controller\PaymentController::submit
+    condition: 'request.isXmlHttpRequest()'
+    methods: [POST]
+
+
 
 ## Prerequisites
 
