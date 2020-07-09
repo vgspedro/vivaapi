@@ -1,9 +1,10 @@
-<?php namespace ATDev\Viva\Transaction;
+<?php 
+namespace VgsPedro\Viva\Transaction;
 
 /**
  * A class which creates get transactions request
  */
-class Trans extends Request {
+class Transactions extends Request {
 
 	/** @const string Uri to required api */
 	const URI = "/nativecheckout/v2/transactions";

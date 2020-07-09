@@ -1,10 +1,10 @@
-<?php namespace ATDev\Viva\Tests\Account;
+<?php namespace VgsPedro\Viva\Tests\Account;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \ATDev\Viva\Account\Authorization;
-use \ATDev\Viva\Tests\Fixture;
+use \VgsPedro\Viva\Account\Authorization;
+use \VgsPedro\Viva\Tests\Fixture;
 
 class AuthorizationTest extends TestCase {
 

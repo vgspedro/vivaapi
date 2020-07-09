@@ -1,4 +1,5 @@
-<?php namespace ATDev\Viva;
+<?php 
+namespace VgsPedro\Viva;
 
 /**
  * Basic functionality to set/get data to make a requests

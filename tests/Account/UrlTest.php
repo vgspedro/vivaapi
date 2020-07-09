@@ -1,7 +1,7 @@
-<?php namespace ATDev\Viva\Tests\Account;
+<?php namespace VgsPedro\Viva\Tests\Account;
 
 use \PHPUnit\Framework\TestCase;
-use \ATDev\Viva\Account\Url;
+use \VgsPedro\Viva\Account\Url;
 
 class UrlTest extends TestCase {
 

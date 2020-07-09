@@ -1,4 +1,5 @@
-<?php namespace ATDev\Viva\Transaction;
+<?php 
+namespace VgsPedro\Viva\Transaction;
 
 /**
  * A class which creates charge token request

@@ -1,4 +1,5 @@
-<?php namespace ATDev\Viva\Transaction;
+<?php 
+namespace VgsPedro\Viva\Transaction;
 
 use \Egulias\EmailValidator\EmailValidator;
 use \Egulias\EmailValidator\Validation\RFCValidation;

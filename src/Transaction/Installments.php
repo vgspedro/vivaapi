@@ -1,5 +1,5 @@
 <?php
-namespace ATDev\Viva\Transaction;
+namespace VgsPedro\Viva\Transaction;
 
 /**
  * A class which creates get installments request

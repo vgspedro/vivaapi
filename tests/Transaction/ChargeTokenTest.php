@@ -1,10 +1,11 @@
-<?php namespace ATDev\Viva\Tests\Transaction;
+<?php 
+namespace VgsPedro\Viva\Tests\Transaction;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \ATDev\Viva\Transaction\ChargeToken;
-use \ATDev\Viva\Tests\Fixture;
+use \VgsPedro\Viva\Transaction\ChargeToken;
+use \VgsPedro\Viva\Tests\Fixture;
 
 class ChargeTokenTest extends TestCase {
 

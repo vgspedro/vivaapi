@@ -1,4 +1,5 @@
-<?php namespace ATDev\Viva;
+<?php 
+namespace VgsPedro\Viva;
 
 /**
  * An url enumeration class

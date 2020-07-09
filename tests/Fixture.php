@@ -1,4 +1,5 @@
-<?php namespace ATDev\Viva\Tests;
+<?php
+namespace VgsPedro\Viva\Tests;
 
 /**
  * Fixture class to stub methods of classes returned from libraries

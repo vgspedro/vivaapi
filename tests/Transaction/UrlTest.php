@@ -1,7 +1,7 @@
-<?php namespace ATDev\Viva\Tests\Transaction;
+<?php namespace VgsPedro\Viva\Tests\Transaction;
 
 use \PHPUnit\Framework\TestCase;
-use \ATDev\Viva\Transaction\Url;
+use \VgsPedro\Viva\Transaction\Url;
 
 class UrlTest extends TestCase {
 

@@ -1,5 +1,5 @@
 <?php 
-namespace ATDev\Viva\Transaction;
+namespace VgsPedro\Viva\Transaction;
 
 /**
  * An abstract class which handles requests to

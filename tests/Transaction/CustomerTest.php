@@ -1,9 +1,10 @@
-<?php namespace ATDev\Viva\Tests\Transaction;
+<?php 
+namespace VgsPedro\Viva\Tests\Transaction;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \ATDev\Viva\Transaction\Customer;
+use \VgsPedro\Viva\Transaction\Customer;
 
 class CustomerTest extends TestCase {
 

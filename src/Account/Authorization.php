@@ -1,11 +1,12 @@
-<?php namespace ATDev\Viva\Account;
+<?php 
+namespace VgsPedro\Viva\Account;
 
 /**
  * Authorization class
  */
 class Authorization {
 
-	use \ATDev\Viva\Request;
+	use \VgsPedro\Viva\Request;
 
 	/** @const string Uri to required api */
 	const URI = "/connect/token";

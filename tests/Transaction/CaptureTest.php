@@ -1,10 +1,11 @@
-<?php namespace ATDev\Viva\Tests\Transaction;
+<?php 
+namespace VgsPedro\Viva\Tests\Transaction;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \ATDev\Viva\Transaction\Capture;
-use \ATDev\Viva\Tests\Fixture;
+use \VgsPedro\Viva\Transaction\Capture;
+use \VgsPedro\Viva\Tests\Fixture;
 
 class CaptureTest extends TestCase {
 

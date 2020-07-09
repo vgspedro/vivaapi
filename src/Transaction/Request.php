@@ -1,6 +1,7 @@
-<?php namespace ATDev\Viva\Transaction;
+<?php
+namespace VgsPedro\Viva\Transaction;
 
-use \ATDev\Viva\Account\Authorization as AccountAuthorization;
+use \VgsPedro\Viva\Account\Authorization as AccountAuthorization;
 
 /**
  * An abstract class which handles all requests to transactions api
