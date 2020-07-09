@@ -3,9 +3,9 @@
 
 # Viva Wallet Native Checkout V2 API PHP Wrapper Library by Aleksey Kuleshov
 
-This package is based on Aleksey Kuleshov work.
+## This package is based on Aleksey Kuleshov work.
 
-Has been modded to suit my needs.
+## Has been modded to suit my needs.
 
 This is a wrapper for Native Checkout V2 API of Viva Wallet: https://developer.vivawallet.com/online-checkouts/native-checkout-v2/
 
@@ -26,6 +26,12 @@ You'll need to set up a payment source with Native Checkout V2  as the integrati
 
 Create payment form and `Charge Token` at front end as described here: https://developer.vivawallet.com/online-checkouts/native-checkout-v2/
 You'll need to have `Access Token` and `Base URL` at front end and you can get them as follows:
+
+
+
+
+
+
 
 ```php
 $baseUrl = \ATDev\Viva\Transaction\Url::getUrl("[Test Mode]"); // Test mode, default is false
