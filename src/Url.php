@@ -1,6 +1,6 @@
 <?php 
-namespace VgsPedro\Viva;
 
+namespace VgsPedro\VivaApi;
 /**
  * An url enumeration class
  */

@@ -1,7 +1,7 @@
 <?php 
-namespace VgsPedro\Viva\Transaction;
+namespace VgsPedro\VivaApi\Transaction;
 
-use \VgsPedro\Viva\Url as BaseUrl;
+use \VgsPedro\VivaApi\Url as BaseUrl;
 
 /**
  * An url enumeration class

@@ -1,5 +1,5 @@
 <?php
-namespace VgsPedro\Viva\Transaction;
+namespace VgsPedro\VivaApi\Transaction;
 
 /**
  * A class which creates get installments request

@@ -1,5 +1,5 @@
 <?php 
-namespace VgsPedro\Viva\Transaction;
+namespace VgsPedro\VivaApi\Transaction;
 
 /**
  * A class which creates get transactions request
@@ -20,7 +20,7 @@ class Transactions extends Request {
 	 *
 	 * @param string $transactionId Transaction Id
 	 *
-	 * @return \ATDev\Viva\Transaction\Transactions
+	 * @return \Transaction\Transactions
 	 */
 	public function setTransactionId($transactionId) {
 

@@ -1,5 +1,5 @@
 <?php 
-namespace VgsPedro\Viva;
+namespace VgsPedro\VivaApi;
 
 /**
  * Basic functionality to set/get data to make a requests

@@ -1,14 +1,14 @@
 <?php
-namespace VgsPedro\Viva\Transaction;
+namespace VgsPedro\VivaApi\Transaction;
 
-use \VgsPedro\Viva\Account\Authorization as AccountAuthorization;
+use \VgsPedro\VivaApi\Account\Authorization as AccountAuthorization;
 
 /**
  * An abstract class which handles all requests to transactions api
  */
 abstract class Request implements \JsonSerializable {
 
-	use \ATDev\Viva\Request;
+	use \VgsPedro\VivaApi\Request;
 
 	/** @const string Uri to required api */
 	const URI = "/nativecheckout/v2/transactions";
