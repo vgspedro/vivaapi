@@ -35,7 +35,7 @@ class ChargeToken extends Request {
 	 *
 	 * @param string $cvc Cvc code
 	 *
-	 * @return \ATDev\Viva\Transaction\ChargeToken
+	 * @return \Transaction\ChargeToken
 	 */
 	public function setCvc($cvc) {
 
@@ -64,7 +64,7 @@ class ChargeToken extends Request {
 	 *
 	 * @param string $number Card Number
 	 *
-	 * @return \ATDev\Viva\Transaction\ChargeToken
+	 * @return \Transaction\ChargeToken
 	 */
 	public function setNumber($number) {
 
@@ -93,7 +93,7 @@ class ChargeToken extends Request {
 	 *
 	 * @param string $holderName Card holder name
 	 *
-	 * @return \ATDev\Viva\Transaction\ChargeToken
+	 * @return \Transaction\ChargeToken
 	 */
 	public function setHolderName($holderName) {
 
@@ -122,7 +122,7 @@ class ChargeToken extends Request {
 	 *
 	 * @param string $expirationYear Card expiration year
 	 *
-	 * @return \ATDev\Viva\Transaction\ChargeToken
+	 * @return \Transaction\ChargeToken
 	 */
 	public function setExpirationYear($expirationYear) {
 
@@ -151,7 +151,7 @@ class ChargeToken extends Request {
 	 *
 	 * @param string $expirationMonth Card expiration month
 	 *
-	 * @return \ATDev\Viva\Transaction\ChargeToken
+	 * @return \Transaction\ChargeToken
 	 */
 	public function setExpirationMonth($expirationMonth) {
 
@@ -180,7 +180,7 @@ class ChargeToken extends Request {
 	 *
 	 * @param string $sessionRedirectUrl Session Redirect url
 	 *
-	 * @return \ATDev\Viva\Transaction\ChargeToken
+	 * @return \Transaction\ChargeToken
 	 */
 	public function setSessionRedirectUrl($sessionRedirectUrl) {
 

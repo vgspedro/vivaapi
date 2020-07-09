@@ -1,11 +1,13 @@
-<?php namespace VgsPedro\Viva\Tests\Transaction;
+<?php
+
+namespace VgsPedro\VivaApi\Tests\Transaction;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \VgsPedro\Viva\Transaction\Charge;
-use \VgsPedro\Viva\Transaction\Customer;
-use \VgsPedro\Viva\Tests\Fixture;
+use \VgsPedro\VivaApi\Transaction\Charge;
+use \VgsPedro\VivaApi\Transaction\Customer;
+use \VgsPedro\VivaApi\Tests\Fixture;
 
 class ChargeTest extends TestCase {
 
@@ -189,7 +191,7 @@ class ChargeTest extends TestCase {
 		$charge->setClientSecret("zxc");
 		$charge->setTestMode(true);
 
-		$auth = test::double("\ATDev\Viva\Account\Authorization", ["getAccessToken" => null, "getError" => "An error occured"]);
+		$auth = test::double("\VgsPedro\VivaApi\Account\Authorization", ["getAccessToken" => null, "getError" => "An error occured"]);
 
 		$result = $charge->getAccessToken();
 
@@ -208,7 +210,7 @@ class ChargeTest extends TestCase {
 		$charge2->setClientSecret("zxc");
 		$charge2->setTestMode(true);
 
-		$auth = test::double("\ATDev\Viva\Account\Authorization", ["getAccessToken" => "the_token", "getError" => null]);
+		$auth = test::double("\VgsPedro\VivaApi\Account\Authorization", ["getAccessToken" => "the_token", "getError" => null]);
 
 		$result = $charge2->getAccessToken();
 
@@ -218,7 +220,7 @@ class ChargeTest extends TestCase {
 
 	public function testJson() {
 
-		$cust = test::double("\ATDev\Viva\Transaction\Customer", ["jsonSerialize" => [], "isEmpty" => true]);
+		$cust = test::double("\VgsPedro\VivaApi\Transaction\Customer", ["jsonSerialize" => [], "isEmpty" => true]);
 
 		$customer = new Customer();
 		$charge = (new Charge())
@@ -232,7 +234,7 @@ class ChargeTest extends TestCase {
 
 		$this->assertSame('{"amount":1230,"preauth":false,"sourceCode":"1414","chargeToken":"qwe"}', json_encode($charge));
 
-		$cust = test::double("\ATDev\Viva\Transaction\Customer", ["jsonSerialize" => [], "isEmpty" => false]);
+		$cust = test::double("\VgsPedro\VivaApi\Transaction\Customer", ["jsonSerialize" => [], "isEmpty" => false]);
 
 		$charge->setInstallments(10);
 		$charge->setMerchantTrns("yui");
@@ -272,7 +274,7 @@ class ChargeTest extends TestCase {
 			->setChargeToken("qwe");
 
 		$stub = test::double($charge, ["getAccessToken" => "access_token"]);
-		$url = test::double("\ATDev\Viva\Transaction\Url", ["getUrl" => "some-url"]);
+		$url = test::double("\VgsPedro\VivaApi\Transaction\Url", ["getUrl" => "some-url"]);
 
 		$response = new Fixture();
 		$response->setStatusCode(200);

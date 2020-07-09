@@ -1,11 +1,11 @@
 <?php 
-namespace VgsPedro\Viva\Tests\Transaction;
+namespace VgsPedro\VivaApi\Tests\Transaction;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \VgsPedro\Viva\Transaction\ChargeToken;
-use \VgsPedro\Viva\Tests\Fixture;
+use \VgsPedro\VivaApi\Transaction\ChargeToken;
+use \VgsPedro\VivaApi\Tests\Fixture;
 
 class ChargeTokenTest extends TestCase {
 
@@ -195,7 +195,7 @@ class ChargeTokenTest extends TestCase {
 		$chargeToken->setClientSecret("zxc");
 		$chargeToken->setTestMode(true);
 
-		$auth = test::double("\ATDev\Viva\Account\Authorization", ["getAccessToken" => null, "getError" => "An error occured"]);
+		$auth = test::double("\VgsPedro\VivaApi\Account\Authorization", ["getAccessToken" => null, "getError" => "An error occured"]);
 
 		$result = $chargeToken->getAccessToken();
 
@@ -214,7 +214,7 @@ class ChargeTokenTest extends TestCase {
 		$chargeToken2->setClientSecret("zxc");
 		$chargeToken2->setTestMode(true);
 
-		$auth = test::double("\ATDev\Viva\Account\Authorization", ["getAccessToken" => "the_token", "getError" => null]);
+		$auth = test::double("\VgsPedro\VivaApi\Account\Authorization", ["getAccessToken" => "the_token", "getError" => null]);
 
 		$result = $chargeToken2->getAccessToken();
 
@@ -284,7 +284,7 @@ class ChargeTokenTest extends TestCase {
 			->setSessionRedirectUrl("https://example.com");
 
 		$stub = test::double($chargeToken, ["getAccessToken" => "access_token"]);
-		$url = test::double("\ATDev\Viva\Transaction\Url", ["getUrl" => "some-url"]);
+		$url = test::double("\VgsPedro\VivaApi\Transaction\Url", ["getUrl" => "some-url"]);
 
 		$response = new Fixture();
 		$response->setStatusCode(200);

@@ -20,7 +20,7 @@ class Installments extends Request {
 	 *
 	 * @param string $number Card Number
 	 *
-	 * @return \ATDev\Viva\Transaction\ChargeToken
+	 * @return \Transaction\ChargeToken
 	 */
 	public function setNumber($number) {
 

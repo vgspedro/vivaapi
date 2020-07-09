@@ -23,7 +23,7 @@ trait Request {
 	 *
 	 * @param string $clientId
 	 *
-	 * @return \ATDev\Viva\Request
+	 * @return \Request
 	 */
 	public function setClientId($clientId) {
 
@@ -52,7 +52,7 @@ trait Request {
 	 *
 	 * @param string $clientSecret
 	 *
-	 * @return \ATDev\Viva\Request
+	 * @return Request
 	 */
 	public function setClientSecret($clientSecret) {
 
@@ -81,7 +81,7 @@ trait Request {
 	 *
 	 * @param bool $testMode
 	 *
-	 * @return \ATDev\Viva\Request
+	 * @return Request
 	 */
 	public function setTestMode($testMode) {
 
@@ -120,7 +120,7 @@ trait Request {
 	 *
 	 * @param string $error
 	 *
-	 * @return \ATDev\Viva\Request
+	 * @return Request
 	 */
 	private function setError($error) {
 

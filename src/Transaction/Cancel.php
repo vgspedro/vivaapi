@@ -17,7 +17,7 @@ class Cancel extends Request {
 	 *
 	 * @param string $transactionId Transaction id to cancel
 	 *
-	 * @return \ATDev\Viva\Transaction\Cancel
+	 * @return \Transaction\Cancel
 	 */
 	public function setTransactionId($transactionId) {
 

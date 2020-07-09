@@ -17,7 +17,7 @@ class Capture extends Request {
 	 *
 	 * @param string $transactionId Transaction id to capture
 	 *
-	 * @return \ATDev\Viva\Transaction\Capture
+	 * @return \Transaction\Capture
 	 */
 	public function setTransactionId($transactionId) {
 

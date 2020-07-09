@@ -29,7 +29,7 @@ class Customer implements \JsonSerializable {
 	 *
 	 * @param string $email
 	 *
-	 * @return \ATDev\Viva\Transaction\Customer
+	 * @return \Transaction\Customer
 	 */
 	public function setEmail($email) {
 
@@ -64,7 +64,7 @@ class Customer implements \JsonSerializable {
 	 *
 	 * @param string $phone
 	 *
-	 * @return \ATDev\Viva\Transaction\Customer
+	 * @return\Transaction\Customer
 	 */
 	public function setPhone($phone) {
 
@@ -93,7 +93,7 @@ class Customer implements \JsonSerializable {
 	 *
 	 * @param string $fullName
 	 *
-	 * @return \ATDev\Viva\Transaction\Customer
+	 * @return \Transaction\Customer
 	 */
 	public function setFullName($fullName) {
 
@@ -122,7 +122,7 @@ class Customer implements \JsonSerializable {
 	 *
 	 * @param string $requestLang
 	 *
-	 * @return \ATDev\Viva\Transaction\Customer
+	 * @return \Transaction\Customer
 	 */
 	public function setRequestLang($requestLang) {
 
@@ -151,7 +151,7 @@ class Customer implements \JsonSerializable {
 	 *
 	 * @param string $countryCode
 	 *
-	 * @return \ATDev\Viva\Transaction\Customer
+	 * @return \Transaction\Customer
 	 */
 	public function setCountryCode($countryCode) {
 

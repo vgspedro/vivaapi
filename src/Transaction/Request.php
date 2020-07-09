@@ -37,7 +37,7 @@ abstract class Request implements \JsonSerializable {
 	 *
 	 * @param array $headers
 	 *
-	 * @return \ATDev\Viva\Transaction\Request
+	 * @return Transaction\Request
 	 */
 	public function setHeaders($headers) {
 
@@ -66,7 +66,7 @@ abstract class Request implements \JsonSerializable {
 	 *
 	 * @param array $expectedResult
 	 *
-	 * @return \ATDev\Viva\Transaction\Request
+	 * @return Transaction\Request
 	 */
 	public function setExpectedResult($expectedResult) {
 
@@ -95,7 +95,7 @@ abstract class Request implements \JsonSerializable {
 	 *
 	 * @param string $sourceCode
 	 *
-	 * @return \ATDev\Viva\Transaction\Request
+	 * @return Transaction\Request
 	 */
 	public function setSourceCode($sourceCode) {
 
@@ -124,7 +124,7 @@ abstract class Request implements \JsonSerializable {
 	 *
 	 * @param int $amount Amount
 	 *
-	 * @return \ATDev\Viva\Transaction\Request
+	 * @return Transaction\Request
 	 */
 	public function setAmount($amount) {
 
@@ -153,7 +153,7 @@ abstract class Request implements \JsonSerializable {
 	 *
 	 * @param int $accessToken Access Token
 	 *
-	 * @return \ATDev\Viva\Transaction\Request
+	 * @return Transaction\Request
 	 */
 	public function setAccessToken($accessToken) {
 

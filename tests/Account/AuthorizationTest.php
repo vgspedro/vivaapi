@@ -1,10 +1,11 @@
-<?php namespace VgsPedro\Viva\Tests\Account;
+<?php 
+namespace VgsPedro\VivaApi\Tests\Account;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \VgsPedro\Viva\Account\Authorization;
-use \VgsPedro\Viva\Tests\Fixture;
+use \VgsPedro\VivaApi\Account\Authorization;
+use \VgsPedro\VivaApi\Tests\Fixture;
 
 class AuthorizationTest extends TestCase {
 
@@ -58,7 +59,7 @@ class AuthorizationTest extends TestCase {
 	public function testGetAccessToken($auth) {
 
 		// test successful executions with production env
-		$url = test::double("\ATDev\Viva\Account\Url", ["getUrl" => "some-url"]);
+		$url = test::double("\VgsPedro\VivaApi\Account\Url", ["getUrl" => "some-url"]);
 
 		$response = new Fixture();
 		$response->setStatusCode(200);

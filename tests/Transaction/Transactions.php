@@ -20,7 +20,7 @@ class Transactions extends Request {
 	 *
 	 * @param string $transactionId Card Number
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return Transaction\Transaction
 	 */
 	public function setTransactionId($transactionId) {
 

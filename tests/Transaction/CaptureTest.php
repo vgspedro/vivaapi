@@ -1,11 +1,11 @@
 <?php 
-namespace VgsPedro\Viva\Tests\Transaction;
+namespace VgsPedro\VivaApi\Tests\Transaction;
 
 use \PHPUnit\Framework\TestCase;
 use \AspectMock\Test as test;
 
-use \VgsPedro\Viva\Transaction\Capture;
-use \VgsPedro\Viva\Tests\Fixture;
+use \VgsPedro\VivaApi\Transaction\Capture;
+use \VgsPedro\VivaApi\Tests\Fixture;
 
 class CaptureTest extends TestCase {
 
@@ -128,7 +128,7 @@ class CaptureTest extends TestCase {
 		$capture->setClientSecret("zxc");
 		$capture->setTestMode(true);
 
-		$auth = test::double("\ATDev\Viva\Account\Authorization", ["getAccessToken" => null, "getError" => "An error occured"]);
+		$auth = test::double("\VgsPedro\VivaApi\Account\Authorization", ["getAccessToken" => null, "getError" => "An error occured"]);
 
 		$result = $capture->getAccessToken();
 
@@ -147,7 +147,7 @@ class CaptureTest extends TestCase {
 		$capture2->setClientSecret("zxc");
 		$capture2->setTestMode(true);
 
-		$auth = test::double("\ATDev\Viva\Account\Authorization", ["getAccessToken" => "the_token", "getError" => null]);
+		$auth = test::double("\VgsPedro\VivaApi\Account\Authorization", ["getAccessToken" => "the_token", "getError" => null]);
 
 		$result = $capture2->getAccessToken();
 
@@ -194,7 +194,7 @@ class CaptureTest extends TestCase {
 			->setTransactionId("123-xx-123");
 
 		$stub = test::double($capture, ["getAccessToken" => "access_token"]);
-		$url = test::double("\ATDev\Viva\Transaction\Url", ["getUrl" => "some-url"]);
+		$url = test::double("\VgsPedro\VivaApi\Transaction\Url", ["getUrl" => "some-url"]);
 
 		$response = new Fixture();
 		$response->setStatusCode(200);

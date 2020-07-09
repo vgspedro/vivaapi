@@ -12,7 +12,7 @@ abstract class Transaction extends Request {
 	/** @const string Request method */
 	const METHOD = "POST";
 
-	/** @var \ATDev\Viva\Transaction\Customer Customer data */
+	/** @var \Transaction\Customer Customer data */
 	private $customer;
 
 	/** @var string The token of the card to be charged */
@@ -40,9 +40,9 @@ abstract class Transaction extends Request {
 	/**
 	 * Sets customer
 	 *
-	 * @param \ATDev\Viva\Transaction\Customer $customer Customer
+	 * @param \Transaction\Customer $customer Customer
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return \Transaction\Transaction
 	 */
 	public function setCustomer($customer) {
 
@@ -71,7 +71,7 @@ abstract class Transaction extends Request {
 	 *
 	 * @param string $chargeToken Charge Token
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return \Transaction\Transaction
 	 */
 	public function setChargeToken($chargeToken) {
 
@@ -101,7 +101,7 @@ abstract class Transaction extends Request {
 	 *
 	 * @param boolean preAuth
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return\Transaction\Transaction
 	 */
 	public function setPreAuth($preAuth) {
 
@@ -128,7 +128,7 @@ abstract class Transaction extends Request {
 	 *
 	 * @param string $chargeToken Charge Token
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return \Transaction\Transaction
 	 */
 	public function setTipAmount($tipAmount) {
 
@@ -157,7 +157,7 @@ abstract class Transaction extends Request {
 	 *
 	 * @param int $currencyCode
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return \Transaction\Transaction
 	 */
 	public function setCurrencyCode($currencyCode) {
 
@@ -186,7 +186,7 @@ abstract class Transaction extends Request {
 	 *
 	 * @param int $installments Maximum installments
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return \Transaction\Transaction
 	 */
 	public function setInstallments($installments) {
 
@@ -215,7 +215,7 @@ abstract class Transaction extends Request {
 	 *
 	 * @param string $merchantTrns Merchant transaction reference
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return \Transaction\Transaction
 	 */
 	public function setMerchantTrns($merchantTrns) {
 
@@ -244,7 +244,7 @@ abstract class Transaction extends Request {
 	 *
 	 * @param string $customerTrns Description that the customer sees
 	 *
-	 * @return \ATDev\Viva\Transaction\Transaction
+	 * @return \Transaction\Transaction
 	 */
 	public function setCustomerTrns($customerTrns) {
 
