@@ -576,11 +576,25 @@ class VivaWallet
               })
             }, 500)
             console.log(data);
-            //alert(data.chargeToken);
-          });
+          })
+          .fail(function(jqXHR, textStatus){
+            console.log(jqXHR.Error)
+            statusCodes(jqXHR.Error.ErrorCode, jqXHR.Error.ErrorText)
+          })
         });
       });
-    </script>
+
+    function statusCodes(code, error){
+      code = Number(code)
+      if(code >= 400 && code <= 499)
+        toastr['info'](code+' '+error);
+      else if (code >= 500 && code <= 599)
+        toastr['error'](code+' '+error);
+      else
+      toastr['error']('Internet connection'); 
+    }
+
+  </script>
 ```
 
 #### Add the Routes 
